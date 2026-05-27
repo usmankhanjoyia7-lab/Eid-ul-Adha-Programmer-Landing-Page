@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eid Mubarak - A programmer's celebration of faith, code, and gratitude">
+    <meta name="theme-color" content="#0f172a">
+    <title>Eid Mubarak - From a Programmer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-glow"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-moon"></div>
+            <p class="loading-text">Eid Mubarak</p>
+        </div>
+    </div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Eid Code</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#message" class="nav-link" data-section="message">Message</a>
+                <a href="#terminal" class="nav-link" data-section="terminal">Terminal</a>
+                <a href="#cards" class="nav-link" data-section="cards">Greetings</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+            </div>
+            <div class="nav-controls">
+                <button class="sound-toggle" id="soundToggle" title="Toggle Sound">🔊</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="starsCanvas" class="stars-canvas"></canvas>
+        <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+        
+        <div class="hero-background">
+            <div class="moon-container">
+                <div class="moon" id="moon">
+                    <div class="moon-craters"></div>
+                </div>
+                <div class="moon-glow"></div>
+            </div>
+            
+            <div class="animated-gradient"></div>
+            <div class="light-rays"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="title-line">Eid</span>
+                    <span class="title-line">Mubarak</span>
+                </h1>
+                <p class="hero-subtitle" id="heroSubtitle">Code. Faith. Sacrifice. Gratitude.</p>
+                <p class="hero-description">From a Programmer's Heart</p>
+            </div>
+            
+            <div class="floating-code">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                    </div>
+                    <div class="code-content">
+                        <p><span class="code-keyword">const</span> eid = <span class="code-string">"Mubarak"</span>;</p>
+                        <p><span class="code-keyword">const</span> blessing = <span class="code-function">celebrate</span>();</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-button-container">
+                <button class="cta-button" id="ctaButton">
+                    <span class="button-text">Explore</span>
+                    <span class="button-glow"></span>
+                </button>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <p>Scroll to explore</p>
+            </div>
+        </div>
+        
+        <!-- Animated Lanterns -->
+        <div class="lantern lantern-1"></div>
+        <div class="lantern lantern-2"></div>
+        <div class="lantern lantern-3"></div>
+    </section>
+    
+    <!-- About Eid Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">About Eid-ul-Adha</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card glass-effect">
+                    <div class="card-icon">🌙</div>
+                    <h3>The Festival of Sacrifice</h3>
+                    <p>Eid-ul-Adha commemorates Prophet Ibrahim's willingness to sacrifice his son in obedience to Allah. It's a celebration of faith, devotion, and the triumph of spiritual values over material desires.</p>
+                </div>
+                
+                <div class="about-card glass-effect">
+                    <div class="card-icon">💚</div>
+                    <h3>Gratitude & Sharing</h3>
+                    <p>یہ عید شکر گزاری اور بھائی چارے کی علامت ہے۔ ہم اپنے خاندار، دوستوں اور ضرورت مندوں کے ساتھ خوشیاں بانٹتے ہیں۔</p>
+                </div>
+                
+                <div class="about-card glass-effect">
+                    <div class="card-icon">✨</div>
+                    <h3>Spiritual Awakening</h3>
+                    <p>Beyond traditions, Eid is a moment of spiritual reflection—a time to renew our commitment to faith, compassion, and personal growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Programmer Message Section -->
+    <section class="message" id="message">
+        <div class="message-container">
+            <div class="message-content glass-effect">
+                <h2 class="message-title">A Programmer's Reflection</h2>
+                <div class="message-text">
+                    <p>We spend our days debugging code, optimizing algorithms, and building digital worlds. Yet, in the silence of the night, beneath the glow of our screens, we remember something deeper.</p>
+                    <p>Eid reminds us that the greatest code is written by the Divine—in the patterns of nature, in the connections between souls, in the sacrifice that binds us.</p>
+                    <p>As programmers, we understand logic, structure, and purpose. Eid teaches us that beyond logic lies faith. Beyond code lies meaning. Beyond algorithms lies love.</p>
+                    <p class="message-urdu">ہم کوڈ لکھتے ہیں، لیکن زندگی لکھی جاتی ہے۔ ہم سسٹم بناتے ہیں، لیکن روح کا نظام الہی ہے۔ عید ہمیں یہ سکھاتی ہے کہ حقیقی خوبصورتی ایمان میں ہے۔</p>
+                </div>
+            </div>
+            
+            <div class="message-visual">
+                <div class="code-snippet">
+                    <div class="snippet-header">programmer_thoughts.js</div>
+                    <div class="snippet-body">
+                        <p><span class="keyword">function</span> <span class="function">celebrateEid</span>() {</p>
+                        <p class="indent">  <span class="keyword">return</span> {</p>
+                        <p class="indent">    faith: <span class="string">"infinite"</span>,</p>
+                        <p class="indent">    gratitude: <span class="string">"boundless"</span>,</p>
+                        <p class="indent">    love: <span class="string">"eternal"</span>,</p>
+                        <p class="indent">    code: <span class="string">"meaningful"</span></p>
+                        <p class="indent">  };</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Terminal Section -->
+    <section class="terminal-section" id="terminal">
+        <div class="terminal-container">
+            <div class="terminal glass-effect">
+                <div class="terminal-header">
+                    <span class="terminal-title">eid-celebration.exe</span>
+                    <div class="terminal-buttons">
+                        <span class="term-btn red"></span>
+                        <span class="term-btn yellow"></span>
+                        <span class="term-btn green"></span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <p class="terminal-line"><span class="prompt">$</span> npm run blessings</p>
+                    <p class="terminal-line"><span class="prompt">></span> loading happiness...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Greeting Cards Section -->
+    <section class="cards" id="cards">
+        <div class="cards-container">
+            <h2 class="section-title">Eid Greetings</h2>
+            
+            <div class="cards-grid">
+                <div class="greeting-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-emoji">🌙</div>
+                        <h3>Eid Mubarak</h3>
+                        <p>May your day be filled with blessings and joy</p>
+                    </div>
+                </div>
+                
+                <div class="greeting-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-emoji">💫</div>
+                        <h3>عید کی خوشیاں</h3>
+                        <p>آپ کی زندگی میں خوشیوں کی بہار آئے</p>
+                    </div>
+                </div>
+                
+                <div class="greeting-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-emoji">✨</div>
+                        <h3>Blessings Eternal</h3>
+                        <p>May faith guide your path always</p>
+                    </div>
+                </div>
+                
+                <div class="greeting-card tilt-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-emoji">🎆</div>
+                        <h3>Celebrate Together</h3>
+                        <p>Sharing joy with loved ones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2 class="section-title">Built With</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-badge">
+                    <span class="skill-icon">💻</span>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-badge">
+                    <span class="skill-icon">🎨</span>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-badge">
+                    <span class="skill-icon">⚡</span>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-badge">
+                    <span class="skill-icon">🎭</span>
+                    <span class="skill-name">Animation</span>
+                </div>
+                <div class="skill-badge">
+                    <span class="skill-icon">🌟</span>
+                    <span class="skill-name">Creativity</span>
+                </div>
+                <div class="skill-badge">
+                    <span class="skill-icon">❤️</span>
+                    <span class="skill-name">Passion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas" class="fireworks-canvas"></canvas>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Built with <span class="heart">❤️</span>, Code & Dua</p>
+            <p class="footer-urdu">دعا کے ساتھ محبت سے بنایا گیا</p>
+            <p class="footer-year">© 2026 • Eid Mubarak</p>
+            <p class="footer-year" style="height: 100px;">Crafted with Code, Creativity & Gratitude — By Usman Khan</p>
+
+        </div>
+    </footer>
+    
+    <!-- Audio Elements (for sound effects) -->
+    <audio id="hoverSound" preload="none">
+        <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
